@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    background-color: salmon;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 3px;
+    border-bottom: 0px;
+    border-style: solid;
+    border-color: gray;
+}
+
+#side-title {
+    background-color: beige;
+    width: 100%;
+    padding: 19px 25px 24px 25px;
+    text-align: left;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-style: solid;
+}
+
+.side-tab-intro {
+    background-color: beige;
+    width: 100%;
+    padding: 14px 25px;
+    text-align: left;
+    border-top: 1px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px;
+    border-style: solid;
+}
+
+.side-tab {
+    background-color: beige;
+    width: 100%;
+    padding: 14px 25px;
+    text-align: left;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px;
+    border-style: solid;
+}
+
+.side-tab-ref {
+    background-color: beige;
+    width: 100%;
+    padding: 14px 25px 180px 25px;
+    text-align: left;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px;
+    border-style: solid;
+}
+
+header {
+    font-size: 1.8em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    line-height: 23px;
+}
+
+#side-container {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.article-titles {
+    margin-left: 340px;
+    margin-top: 28px;
+    text-align: left;
+}
+
+.article-paragraph {
+    margin-left: 350px;
+    margin-right: 30px;
+    margin-top: 20px;
+}
