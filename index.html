@@ -61,11 +61,11 @@
             </div>
 
             <div class="side-tab">
-                <p>What you should already know</p>
+                <a href="#anatomy-of-a-link">Anatomy of a Link</a>
             </div>
 
             <div class="side-tab-ref">
-                <p>What you should already know</p>
+                <a href="#references">References</a>
             </div>
             </div>
 
@@ -491,6 +491,88 @@
                     <header>
                         HTML Layout Elements in More Detail
                     </header>
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        It's good to understand the overall meaning of all the HTML sectioning elements in detail — this is something you'll work on gradually as you start to get more experience with web development. You can find a lot of detail by reading our HTML element reference. For now, these are the main definitions that you should try to understand:
+                    </p>
+                </div>
+
+                <div id="list">
+                    <ul>
+                        <li>
+                            <div id="highlighted">&lt;main&gt;</div> is for content unique to this page. Use <div id="highlighted">&lt;main&gt;</div> only once per page, and put it directly inside <div id="highlighted">&lt;body&gt;</div>. Ideally this shouldn't be nested within other elements.
+                        </li>
+                        <li>
+                            <div id="highlighted">&lt;article&gt;</div> encloses a block of related content that makes sense on its own without the rest of the page (e.g., a single blog post).
+                        </li>
+                        <li>
+                            <div id="highlighted">&lt;section&gt;</div> is similar to <div id="highlighted">&lt;article&gt;</div>, but it is more for grouping together a single part of the page that constitutes one single piece of functionality (e.g., a mini map, or a set of article headlines and summaries), or a theme. It's considered best practice to begin each section with a heading; also note that you can break <div id="highlighted">&lt;article&gt;</div>s up into different <div id="highlighted">&lt;section&gt;</div>s, or <div id="highlighted">&lt;section&gt;</div>s up into different <div id="highlighted">&lt;article&gt;</div>s, depending on the context.
+                        </li>
+                        <li>
+                            <div id="highlighted">&lt;aside&gt;</div> contains content that is not directly related to the main content but can provide additional information indirectly related to it (glossary entries, author biography, related links, etc.).
+                        </li>
+                        <li>
+                            <div id="highlighted">&lt;header&gt;</div> represents a group of introductory content. If it is a child of <div id="highlighted">&lt;body&gt;</div> it defines the global header of a webpage, but if it's a child of an <div id="highlighted">&lt;article&gt;</div> or <div id="highlighted">&lt;section&gt;</div> it defines a specific header for that section (try not to confuse this with titles and headings).
+                        </li>
+                        <li>
+                            <div id="highlighted">&lt;nav&gt;</div> contains the main navigation functionality for the page. Secondary links, etc., would not go in the navigation.
+                        </li>
+                        <li>
+                            <div id="highlighted">&lt;footer&gt;</div> represents a group of end content for a page.
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <article>
+                <div class="article-titles" id="anatomy-of-a-link">
+                    <header>
+                        Anatomy of a Link
+                    </header>
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        A basic link is created by wrapping the text or other content, see Block level links, inside an <div id="highlighted">&lt;a&gt;</div> element and using the <div id="highlighted">href</div> attribute, also known as a Hypertext Reference, or target, that contains the web address.
+                    </p>
+                </div>
+
+                <div class="code-block">
+                    <code>
+                        &lt;p&gt;I'm creating a link to<br>
+                            &lt;a href="https://www.mozilla.org/en-US/">the Mozilla homepage&lt;/a&gt;.<br>
+                            &lt;/p&gt;
+                    </code>
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        This gives us the following result:
+                    </p>
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        I'm creating a link to <a id="paragraph-link" href="https://www.mozilla.org/en-US/">the Mozilla homepage</a>.
+                    </p>
+                </div>
+            </article>
+
+            <article id="page-bottom">
+                <div class="article-titles" id="references">
+                    <header>
+                        References
+                    </header>
+                </div>
+
+                <div id="list">
+                    <ul>
+                        <li>
+                            All the documentation in this page is taken from <a id="paragraph-link" href="https://developer.mozilla.org/en-US/docs/Learn/HTML">MDN</a>
+                        </li>
+                    </ul>
                 </div>
             </article>
         </div>
