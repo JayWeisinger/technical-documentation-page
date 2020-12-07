@@ -97,3 +97,56 @@ p {
     margin-right: 30px;
     margin-top: 20px;
 }
+
+.code-block {
+    margin-left: 363px;
+    margin-top: 20px;
+    margin-right: 55px;
+    background-color: gainsboro;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.nested-code-block {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 300px;
+    background-color: gainsboro;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.img {
+    margin-left: 350px;
+    margin-top: 25px;
+}
+
+#diagram {
+    width: 675px;
+    height: 200px;
+}
+
+#list {
+    margin-left: 415px;
+    margin-top: 25px;
+    margin-right: 30px;
+    line-height: 23px;
+}
+
+ul > li {
+    margin-top: 15px;
+}
+
+ol > li {
+    margin-top: 15px; 
+}
+
+#diagram-2 {
+    width: 675px;
+}
+
+#highlighted {
+    background-color: gainsboro;
+    display: inline-block;
+    border-radius: 2px;
+}

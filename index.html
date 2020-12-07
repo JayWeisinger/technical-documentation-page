@@ -21,27 +21,27 @@
             </div>
 
             <div class="side-tab">
-                <p>What you should already know</p>
+                <a href="#what-is-html">What is HTML?</a>
             </div>
 
             <div class="side-tab">
-                <p>What you should already know</p>
+                <a href="#anatomy-of-an-html-element">Anatomy of an HTML Element</a>
             </div>
 
             <div class="side-tab">
-                <p>What you should already know</p>
+                <a href="#nesting-elements">Nesting Elements</a>
             </div>
 
             <div class="side-tab">
-                <p>What you should already know</p>
+                <a href="#empty-elements">Empty Elements</a>
             </div>
 
             <div class="side-tab">
-                <p>What you should already know</p>
+                <a href="#attributes">Attributes</a>
             </div>
 
             <div class="side-tab">
-                <p>What you should already know</p>
+                <a href="#anatomy-of-an-html-document">Anatomy of an HTML Document</a>
             </div>
 
             <div class="side-tab">
@@ -97,10 +97,266 @@
                     </p>
                 </div>
             </article>
+
+            <article>
+                <div class="article-titles" id="what-is-html">
+                    <header>
+                        What is HTML?
+                    </header>
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        HTML (Hypertext Markup Language) is not a programming language. It is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on.  For example, consider the following line of text:
+                    </p>
+                </div>
+
+                <div class="code-block">
+                    <code>
+                        My cat is very grumpy
+                    </code>
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        If we wanted the text to stand by itself, we could specify that it is a paragraph by enclosing it in a paragraph  (&lt;p&gt;) element:
+                    </p>
+                </div>
+
+                <div class="code-block">
+                    <code>
+                        &lt;p&gt;My cat is very grumpy&lt;/p&gt;
+                    </code>
+                </div>
+            </article>
+
+            <article>
+                <div class="article-titles" id="anatomy-of-an-html-element">
+                    <header>
+                        Anatomy of an HTML Element
+                    </header>
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        Let's further explore our paragraph element from the previous section:
+                    </p>
+                </div>
+
+                <div class="img">
+                    <img id="diagram" src="https://media.prod.mdn.mozit.cloud/attachments/2014/11/14/9347/c07aa313dbdd667585430f4eca354dbd/grumpy-cat-small.png" alt="diagram detailing the anatomy of an html element">
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        The anatomy of our element is:
+                    </p>
+                </div>
+
+                <div id=list>
+                    <ul>
+                        <li>
+                            <b>The opening tag: </b>This consists of the name of the element (in this example, p for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. In this example, it precedes the start of the paragraph text.
+                        </li>
+                        <li>
+                            <b>The content: </b>This is the content of the element. In this example, it is the paragraph text.
+                        </li>
+                        <li>
+                            <b>The closing tag: </b>This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        The element is the opening tag, followed by content, followed by the closing tag.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <div class="article-titles" id="nesting-elements">
+                    <header>
+                        Nesting Elements
+                    </header>
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        Elements can be placed within other elements. This is called nesting. If we wanted to state that our cat is very grumpy, we could wrap the word very in a &lt;strong&gt; element, which means that the word is to have strong(er) text formatting:
+                    </p>
+                </div>
+
+                <div class="code-block">
+                    <code>
+                        &lt;p&gt;My cat is &lt;strong&gt;<b>very</b>&lt;/strong&gt; grumpy.&lt;/p&gt;
+                    </code>
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        There is a right and wrong way to do nesting. In the example above, we opened the p element first, then opened the strong element. For proper nesting, we should close the strong element first, before closing the p.
+                    </p>
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        The following is an example of the wrong way to do nesting:
+                    </p>
+                </div>
+
+                <div class="code-block">
+                    <code>
+                        &lt;p&gt;My cat is &lt;strong&gt;very grumpy.&lt;/p&gt;&lt;/strong&gt;
+                    </code>
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        The tags have to open and close in a way that they are inside or outside one another. With the kind of overlap in the example above, the browser has to guess at your intent. This kind of guessing can result in unexpected results.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <div class="article-titles" id="empty-elements">
+                    <header>
+                        Empty Elements
+                    </header>
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        Not all elements follow the pattern of an opening tag, content, and a closing tag. Some elements consist of a single tag, which is typically used to insert/embed something in the document. For example, the &lt;img&gt; element embeds an image file onto a page:
+                    </p>
+                </div>
+
+                <div class="code-block">
+                    <code>
+                        &lt;img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png"&gt;
+                    </code>
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        This would output the following:
+                    </p>
+                </div>
+
+                <div class="img">
+                    <img id="firefox" src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png" alt="firefox logo">
+                </div>
+            </article>
+
+            <article>
+                <div class="article-titles" id="attributes">
+                    <header>
+                        Attributes
+                    </header>
+                </div>
+    
+                <div class="article-paragraph">
+                    <p>
+                        Elements can also have attributes. Attributes look like this:
+                    </p>
+                </div>
+    
+                <div class="img">
+                    <img id="diagram-2" src="https://media.prod.mdn.mozit.cloud/attachments/2014/11/14/9345/99516bbeb470af58b608d17bb30e53e6/grumpy-cat-attribute-small.png" alt="diagram of how attribute work in an html element">
+                </div>
+    
+                <div class="article-paragraph">
+                    <p>
+                        Attributes contain extra information about the element that won't appear in the content. In this example, the class attribute is an identifying name used to target the element with style information.
+                    </p>
+                </div>
+    
+                <div class="article-paragraph">
+                    <p>
+                        An attribute should have:
+                    </p>
+                </div>
+    
+                <div id="list">
+                    <ul>
+                        <li>
+                            A space between it and the element name. (For an element with more than one attribute, the attributes should be separated by spaces too.)
+    
+                        </li>
+                        <li>
+                            The attribute name, followed by an equal sign.
+                        </li>
+                        <li>
+                            An attribute value, wrapped with opening and closing quote marks.
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <article>
+                <div class="article-titles" id="anatomy-of-an-html-document">
+                    <header>
+                        Anatomy of an HTML Document
+                    </header>
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        Individual HTML elements aren't very useful on their own. Next, let's examine how individual elements combine to form an entire HTML page:
+                    </p>
+                </div>
+
+                <div class="code-block">
+                    <code>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>&ensp;
+                        &lt;head&gt;<br>&ensp;&ensp;
+                            &lt;meta charset="utf-8"&gt;<br>&ensp;&ensp;
+                            &lt;title&gt;My test page&lt;/title&gt;<br>&ensp;
+                        &lt;/head&gt;<br>&ensp;
+                        &lt;body&gt;<br>&ensp;&ensp;
+                            &lt;p&gt;This is my page&lt;/p&gt;<br>&ensp;
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </code>
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        Here we have:
+                    </p>
+                </div>
+
+                <div id="list">
+                    <ol>
+                        <li>
+                            <div id="highlighted">&lt;!DOCTYPE html&gt;</div>: The doctype. When HTML was young (1991-1992), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML. Doctypes used to look something like this:
+                            <div class="nested-code-block">
+                                <code>
+                                    &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                                    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+                                </code>
+                            </div>
+                            More recently, the doctype is a historical artifact that needs to be included for everything else to work right. <div id="highlighted">&lt;!DOCTYPE html&gt;</div> is the shortest string of characters that counts as a valid doctype. That is all you need to know!
+                        </li>
+                        <li>
+                            <div id="highlighted">&lt;html&gt;&lt;/html&gt;</div>: The <div id="highlighted">&lt;html&gt;</div> element. This element wraps all the content on the page. It is sometimes known as the root element.
+                        </li>
+                        <li>
+                            <div id="highlighted">&lt;head&gt;&lt;/head&gt;</div>: The <div id="highlighted">&lt;head&gt;</div> element. This element acts as a container for everything you want to include on the HTML page, <b>that isn't the content</b> the page will show to viewers. This includes keywords and a page description that would appear in search results, CSS to style content, character set declarations, and more. You'll learn more about this in the next article of the series.
+                        </li>
+                        <li>
+                            <div id="highlighted">&lt;meta charset="utf-8"&gt;</div>: This element specifies the character set for your document to UTF-8, which includes most characters from the vast majority of human written languages. With this setting, the page can now handle any textual content it might contain. There is no reason not to set this, and it can help avoid some problems later.
+                        </li>
+                        <li>
+                            <div id="highlighted">&lt;title&gt;&lt;/title&gt;</div>: The <div id="highlighted">&lt;title&gt;</div> element. This sets the title of the page, which is the title that appears in the browser tab the page is loaded in. The page title is also used to describe the page when it is bookmarked.
+                        </li>
+                        <li>
+                            <div id="highlighted">&lt;body&gt;&lt;/body&gt;</div>: The <div id="highlighted">&lt;body&gt;</div> element. This contains all the content that displays on the page, including text, images, videos, games, playable audio tracks, or whatever else.
+                        </li>
+                    </ol>
+                </div>
+            </article>
         </div>
-
-        
-        
-
     </body>
 </html>
