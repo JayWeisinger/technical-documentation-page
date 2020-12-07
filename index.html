@@ -45,19 +45,19 @@
             </div>
 
             <div class="side-tab">
-                <p>What you should already know</p>
+                <a href="#html-comments">HTML Comments</a>
             </div>
 
             <div class="side-tab">
-                <p>What you should already know</p>
+                <a href="#what-is-the-html-head">What is the HTML Head?</a>
             </div>
 
             <div class="side-tab">
-                <p>What you should already know</p>
+                <a href="#basic-sections-of-a-documnet">Basic Sections of a Document</a>
             </div>
 
             <div class="side-tab">
-                <p>What you should already know</p>
+                <a href="#html-layout-elements-in-more-detail">HTML layout elements in more detail</a>
             </div>
 
             <div class="side-tab">
@@ -355,6 +355,142 @@
                             <div id="highlighted">&lt;body&gt;&lt;/body&gt;</div>: The <div id="highlighted">&lt;body&gt;</div> element. This contains all the content that displays on the page, including text, images, videos, games, playable audio tracks, or whatever else.
                         </li>
                     </ol>
+                </div>
+            </article>
+
+            <article>
+                <div class="article-titles" id="html-comments">
+                    <header>
+                        HTML Comments
+                    </header>
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        HTML has a mechanism to write comments in the code. Browsers ignore comments, effectively making comments invisible to the user. The purpose of comments is to allow you to include notes in the code to explain your logic or coding. This is very useful if you return to a code base after being away for long enough that you don't completely remember it. Likewise, comments are invaluable as different people are making changes and updates.
+                    </p>
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        To write an HTML comment, wrap it in the special markers&nbsp;<div id="highlighted">&lt;!-- and --&gt;</div>. For example:
+                    </p>
+                </div>
+
+                <div class="code-block">
+                    <code>
+                        &lt;p&gt;I'm not inside a comment&lt;/p&gt;<br><br>
+                        
+                        &lt;!-- &lt;p&gt;I am!&lt;/p&gt; --&gt;
+                    </code>
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        As you can see below, only the first paragraph displays in the live output.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <div class="article-titles" id="what-is-the-html-head">
+                    <header>
+                        What is the HTML Head?
+                    </header>
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        Let's revisit the simple <a href="#anatomy-of-an-html-document" id="paragraph-link">HTML document we covered in the previous article:</a>
+                    </p>
+                </div>
+
+                <div class="code-block">
+                    <code>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>&ensp;
+                        &lt;head&gt;<br>&ensp;&ensp;
+                            &lt;meta charset="utf-8"&gt;<br>&ensp;&ensp;
+                            &lt;title&gt;My test page&lt;/title&gt;<br>&ensp;
+                        &lt;/head&gt;<br>&ensp;
+                        &lt;body&gt;<br>&ensp;&ensp;
+                            &lt;p&gt;This is my page&lt;/p&gt;<br>&ensp;
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </code>
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        The HTML head is the contents of the&nbsp;<div id="highlighted">&lt;head&gt;</div> element — unlike the contents of the <div id="highlighted">&lt;body&gt;</div> element (which are displayed on the page when loaded in a browser), the head's content is not displayed on the page. Instead, the head's job is to contain metadata about the document. In the above example, the head is quite small:
+                    </p>
+                </div>
+
+                <div class="code-block">
+                    <code>
+                        &lt;head&gt;<br>&ensp;&ensp;
+                            &lt;meta charset="utf-8"&gt;<br>&ensp;&ensp;
+                            &lt;title&gt;My test page&lt;/title&gt;<br>
+                        &lt;/head&gt;
+                    </code>
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        In larger pages however, the head can get quite full. Try going to some of your favorite websites and use the developer tools to check out their head contents. Our aim here is not to show you how to use everything that can possibly be put in the head, but rather to teach you how to use the major elements that you'll want to include in the head, and give you some familiarity.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <div class="article-titles" id="basic-sections-of-a-document">
+                    <header>
+                        Basic Sections of a Document
+                    </header>
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        Webpages can and will look pretty different from one another, but they all tend to share similar standard components, unless the page is displaying a fullscreen video or game, is part of some kind of art project, or is just badly structured:
+                    </p>
+                </div>
+
+                <div id="list">
+                    <ul>
+                        <li><b>Header:</b>
+                            Usually a big strip across the top with a big heading, logo, and perhaps a tagline. This usually stays the same from one webpage to another.
+                        </li>
+                        <li><b>Navigation bar:</b>
+                            Links to the site's main sections; usually represented by menu buttons, links, or tabs. Like the header, this content usually remains consistent from one webpage to another — having inconsistent navigation on your website will just lead to confused, frustrated users. Many web designers consider the navigation bar to be part of the header rather than an individual component, but that's not a requirement; in fact, some also argue that having the two separate is better for accessibility, as screen readers can read the two features better if they are separate.
+                        </li>
+                        <li><b>Main content:</b>
+                            A big area in the center that contains most of the unique content of a given webpage, for example, the video you want to watch, or the main story you're reading, or the map you want to view, or the news headlines, etc. This is the one part of the website that definitely will vary from page to page!
+                        </li>
+                        <li><b>Sidebar:</b>
+                            Some peripheral info, links, quotes, ads, etc. Usually, this is contextual to what is contained in the main content (for example on a news article page, the sidebar might contain the author's bio, or links to related articles) but there are also cases where you'll find some recurring elements like a secondary navigation system.
+                        </li>
+                        <li><b>Footer:</b>
+                            A strip across the bottom of the page that generally contains fine print, copyright notices, or contact info. It's a place to put common information (like the header) but usually, that information is not critical or secondary to the website itself. The footer is also sometimes used for SEO purposes, by providing links for quick access to popular content.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="article-paragraph">
+                    <p>
+                        A "typical website" could be structured something like this:
+                    </p>
+                </div>
+
+                <div class="img">
+                    <img id="website-template" src="https://media.prod.mdn.mozit.cloud/attachments/2016/02/04/12417/6cafd9611746c73dffd0b2821bdf57f4/sample-website.png" alt="diagram of a basic website layout">
+                </div>
+            </article>
+
+            <article>
+                <div class="article-titles" id="html-layout-elements-in more-detail">
+                    <header>
+                        HTML Layout Elements in More Detail
+                    </header>
                 </div>
             </article>
         </div>

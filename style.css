@@ -78,6 +78,7 @@ a {
 
 p {
     line-height: 23px;
+    display: inline-block;
 }
 
 #side-container {
@@ -149,4 +150,14 @@ ol > li {
     background-color: gainsboro;
     display: inline-block;
     border-radius: 2px;
+}
+
+#paragraph-link {
+    text-decoration: underline;
+    color: rgb(78, 163, 192);
+}
+
+#website-template {
+    height: 400px;
+    width: 650px;
 }
