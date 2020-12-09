@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 
-#main-content {
+#main-doc {
     color: green;
 }
 
-#sidebar {
+#navbar {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -176,18 +176,18 @@ ol > li {
     max-width: 45vw;
 }
 
-#page-bottom {
+.page-bottom {
     margin-bottom: 150px;
 }
 
 @media (max-width: 1030px) {
-    #main-content {
+    #main-doc {
         color: black;
     }
 }
 
 @media (max-width: 815px) {
-    #sidebar {
+    #navbar {
         position: relative;
         width: 100%;
         height: 220px;
@@ -199,7 +199,7 @@ ol > li {
 }
 
 @media (max-width: 815px) {
-    #main-content {
+    #main-doc {
         margin-top: 100px;
     }
 
